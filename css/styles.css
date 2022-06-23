@@ -1,0 +1,70 @@
+button {
+  border: none;
+  background-color: inherit;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 5vw;
+  background-color: rgb(243, 237, 229);
+}
+
+h3 {
+  color: rgb(44, 68, 90);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  background-color: rgb(243, 237, 229);
+}
+header nav {
+  display: none;
+  grid-template-columns: 1fr;
+  padding: 5%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 0.5rem;
+  width: 100%;
+  gap: 1.5rem;
+}
+header nav.active {
+  display: grid;
+}
+header nav div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+header nav div p {
+  grid-column: 2/span 1;
+}
+
+#mainContainer {
+  padding-top: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
